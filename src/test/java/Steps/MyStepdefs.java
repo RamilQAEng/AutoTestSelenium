@@ -4,7 +4,6 @@ import Config.UserConf;
 import Pages.SignIn;
 import io.cucumber.java.en.Then;
 
-
 public class MyStepdefs {
 
      SignIn sigin = new SignIn();
@@ -19,8 +18,8 @@ public class MyStepdefs {
         sigin.inputPass(UserConf.USER_PASSWORD);
     }
 
-    @Then("{string} button")
-    public void button() {
-        sigin.buttonClick();
+    @Then("Click button")
+    public void clickButton1() {
+        sigin.clickButton();
     }
 }
