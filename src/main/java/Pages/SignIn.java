@@ -2,14 +2,14 @@ package Pages;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-
-import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.*;
 
 
 public class SignIn {
     private final SelenideElement logInp = $(By.id("user-name"));
     private final SelenideElement passInp = $(By.id("password"));
     private final SelenideElement buttonCl = $(By.id("login-button"));
+
 
     public void inputLogin(String text) {
         this.logInp.val(text);
@@ -22,6 +22,7 @@ public class SignIn {
     public void clickButton() {
         this.buttonCl.click();
     }
+
 }
 
 

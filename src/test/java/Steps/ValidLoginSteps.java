@@ -4,7 +4,7 @@ import Config.UserConf;
 import Pages.SignIn;
 import io.cucumber.java.en.Then;
 
-public class MyStepdefs {
+public class ValidLoginSteps {
 
      SignIn sigin = new SignIn();
 
@@ -22,4 +22,5 @@ public class MyStepdefs {
     public void clickButton1() {
         sigin.clickButton();
     }
+
 }
